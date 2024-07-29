@@ -41,7 +41,7 @@ class Database:
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 title VARCHAR(150),
                 author VARCHAR(150),
-                summary TEXT,
+                summary VARCHAR(MAX),
                 genre VARCHAR(150),
                 date_added DATE,
                 is_borrowed BIT(1),
@@ -54,8 +54,9 @@ class Database:
             username VARCHAR(255),
             password VARCHAR(255),
             phone_number VARCHAR(255),
-            PERMISSION INT,
-            CREATION_DATE DATE
+            borrowed_books VARCHAR(255),
+            permission INT,
+            creation_date DATE
                        )"""
         try:
             self.__dbcursor.execute(query_books)
