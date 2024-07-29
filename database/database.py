@@ -41,7 +41,7 @@ class Database:
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 title VARCHAR(150),
                 author VARCHAR(150),
-                summary VARCHAR(MAX),
+                summary VARCHAR(MAX) ,
                 genre VARCHAR(150),
                 date_added DATE,
                 is_borrowed BIT(1),
