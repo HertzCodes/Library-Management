@@ -1,78 +1,33 @@
-from hashlib import sha256
-
-
 class User:
     def __init__(
         self,
+        student_id,
         username: str,
         password: str,
-        password_confirmation,
         number: str,
         date,
-        permission=3,
+        borrowed_books,
+        permission,
     ) -> None:
+        self.student_id = student_id
         self.username = username
-        self.set_password(password, password_confirmation)
+        self.password = password
         self.number = number
         self.permission = permission
         self.date_created = date
-
-    def set_password(self, password, password_confirmation):
-        if password == password_confirmation:
-            self.password = sha256(password.encode("utf-8")).hexdigest()
-            return True
-        return False
+        self.borrowed_books = borrowed_books
 
 
-class Admin(User):
-    def __init__(
-        self,
-        username: str,
-        password: str,
-        password_confirmation,
-        number: str,
-        date,
-        permission=1,
-    ) -> None:
-        super().__init__(
-            username, password, password_confirmation, number, date, permission
-        )
+class Owner(User):
+    def __init__(self, student_id, username, password, number, date, borrowed_books, permission):
+        super().__init__(student_id, username, password, number, date, borrowed_books, permission)
 
 
-class Owner(Admin):
-    def __init__(
-        self, username: str, password: str, password_confirmation, date, number: str
-    ) -> None:
-        super().__init__(
-            username, password, password_confirmation, number, date, permission=0
-        )
+class Librarian(User):
+    def __init__(self, student_id, username, password, number, date, borrowed_books, permission):
+        super().__init__(student_id, username, password, number, date, borrowed_books, permission)
 
 
-class Librarian(Admin):
-    def __init__(
-        self,
-        username: str,
-        password: str,
-        password_confirmation,
-        date,
-        number: str,
-        permission,
-    ) -> None:
-        super().__init__(
-            username, password, password_confirmation, number, date, permission
-        )
-
-
-class Client(User):
-    def __init__(
-        self,
-        username: str,
-        password: str,
-        password_confirmation,
-        date,
-        number: str,
-        permission=3,
-    ) -> None:
-        super().__init__(
-            username, password, password_confirmation, number, date, permission
-        )
+class Student(User):
+    def __init__(self, student_id, username, password, number, date, borrowed_books, permission):
+        super().__init__(student_id, username, password, number, date, borrowed_books, permission)

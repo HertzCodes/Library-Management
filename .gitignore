@@ -1,0 +1,7 @@
+database
+venv
+main/objects/__pycache__/
+main/panel/__pycache__/
+main/__pycache__/
+.env
+.idea

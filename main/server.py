@@ -1,7 +1,8 @@
-import sys
 import datetime
-sys.path.append('database')
-from database import Database
+from database.database import Database
+
+
+
 
 class Server:
     _instance = None
@@ -14,9 +15,14 @@ class Server:
     def __init__(self) -> None:
         self.__db = Database()
         self._date = datetime.date.today()
-    
-    
-    def grant_permission(user):
-        return True if user['permission'] >= 2 else False
 
-server = Server()
+    @staticmethod
+    def grant_permission(user):
+        return True if user['permission'] >= 1 else False
+
+    def send_query(self, user, query):
+        if self.grant_permission(user):
+            self.__db.run_query(query)
+            return True
+        return False
+
