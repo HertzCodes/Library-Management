@@ -41,7 +41,7 @@ class Database:
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 title VARCHAR(150),
                 author VARCHAR(150),
-                summary VARCHAR(MAX) ,
+                summary VARCHAR(255) ,
                 genre VARCHAR(150),
                 date_added DATE,
                 is_borrowed BIT(1),
@@ -68,9 +68,10 @@ class Database:
                     f"{datetime.datetime.now()}\nTABLE_ERROR: {errormessage}\n------------------------------------------------")
 
     def run_query(self, query, values):
-        os.chdir('database')
         try:
             self.__dbcursor.execute(query, values)
+            if query.startswith("SELECT"):
+                return self.__dbcursor.fetchall()
             self.__localhost_connect.commit()
             with open('database_logs.txt', 'a') as log:
                 log.write(
@@ -80,3 +81,5 @@ class Database:
                 log.write(
                     f"{datetime.datetime.now()}\nQUERY_ERROR: {errormessage}\n------------------------------------------------\n")
         os.chdir('..')
+
+

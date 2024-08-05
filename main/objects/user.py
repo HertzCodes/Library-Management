@@ -16,6 +16,7 @@ class User:
         self.permission = permission
         self.date_created = date
         self.borrowed_books = borrowed_books
+        self.logged_in = True
 
 
 class Owner(User):
