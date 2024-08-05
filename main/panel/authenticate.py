@@ -25,3 +25,4 @@ class Login:
         if user_info[0][2] == sha256(password.encode('UTF-8')).hexdigest():
             return self.__server_access.factory.create_user(*user_info[0])
         return False
+

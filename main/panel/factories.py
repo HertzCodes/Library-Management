@@ -3,6 +3,7 @@ from main.objects.user import Owner, Librarian, Student
 
 class UserFactory:
     def create_user(self, student_id, username, password, number, date, borrowed_books, permission):
+        print(permission)
         if permission == 0:
             return OwnerFactory().create_user(student_id, username, password, number, date, borrowed_books, permission)
 

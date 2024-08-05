@@ -45,7 +45,8 @@ class Database:
                 genre VARCHAR(150),
                 date_added DATE,
                 is_borrowed BIT(1),
-                borrowed_by VARCHAR(150)
+                borrowed_by VARCHAR(150),
+                stock INT
             )
         """
         query_users = """
@@ -54,9 +55,9 @@ class Database:
             username VARCHAR(255),
             password VARCHAR(255),
             phone_number VARCHAR(255),
+            creation_date DATE
             borrowed_books VARCHAR(255),
             permission INT,
-            creation_date DATE
                        )"""
         try:
             self.__dbcursor.execute(query_books)
