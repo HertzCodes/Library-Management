@@ -1,0 +1,9 @@
+2024-08-05 14:05:11.296822
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT,
+                       ' at line 7
+------------------------------------------------2024-08-05 14:05:35.613068
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------

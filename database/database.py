@@ -57,7 +57,7 @@ class Database:
             phone_number VARCHAR(255),
             creation_date DATE
             borrowed_books VARCHAR(255),
-            permission INT,
+            permission INT
                        )"""
         try:
             self.__dbcursor.execute(query_books)
