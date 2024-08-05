@@ -18,14 +18,13 @@ class Server:
 
     @staticmethod
     def grant_permission(user):
-        return True if user['permission'] >= 1 else False
+        return True if user.permission <= 1 else False
 
-    def send_query(self, user, query):
+    def send_query(self, user, query, values):
         if self.grant_permission(user):
-            self.__db.run_query(query)
+            self.__db.run_query(query, values)
             return True
         return False
 
-    def get_query(self, query, values):
-        result = self.__db.run_query(query, values)
-        return result
+    def get_query(self, query, values = ''):
+        return self.__db.run_query(query, values)

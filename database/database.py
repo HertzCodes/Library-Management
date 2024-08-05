@@ -55,7 +55,7 @@ class Database:
             username VARCHAR(255),
             password VARCHAR(255),
             phone_number VARCHAR(255),
-            creation_date DATE
+            creation_date DATE,
             borrowed_books VARCHAR(255),
             permission INT
                        )"""
@@ -68,11 +68,12 @@ class Database:
                 log.write(
                     f"{datetime.datetime.now()}\nTABLE_ERROR: {errormessage}\n------------------------------------------------")
 
-    def run_query(self, query, values):
+    def run_query(self, query, values= ''):
         try:
             self.__dbcursor.execute(query, values)
             if query.startswith("SELECT"):
                 return self.__dbcursor.fetchall()
+
             self.__localhost_connect.commit()
             with open('database_logs.txt', 'a') as log:
                 log.write(

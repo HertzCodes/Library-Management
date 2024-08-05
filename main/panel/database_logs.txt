@@ -1,0 +1,84 @@
+2024-08-05 15:03:08.761657
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 15:03:20.825014
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 15:04:01.498174
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 15:04:22.223927
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 15:04:32.795158
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 15:05:00.159819
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 15:05:58.823140
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 15:07:26.805734
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 16:26:50.269258
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 16:30:28.631581
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 16:31:50.557838
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 16:32:17.811975
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 16:33:15.539497
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 16:33:25.227565
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 16:34:54.529078
+TABLE_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'borrowed_books VARCHAR(255),
+            permission INT
+                       )' at line 7
+------------------------------------------------2024-08-05 16:40:34.571098
+QUERY_ERROR: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[],2, CURRENT_DATE)' at line 1
+------------------------------------------------
+2024-08-05 16:44:34.851384
+QUERY: INSERT INTO users (username, password, phone_number, borrowed_books, permission, creation_date) VALUES (%s, %s, %s,%s,2, CURRENT_DATE)
+------------------------------------------------
+2024-08-05 16:45:19.063909
+QUERY: INSERT INTO users (username, password, phone_number, borrowed_books, permission, creation_date) VALUES (%s, %s, %s,%s,2, CURRENT_DATE)
+------------------------------------------------
+2024-08-05 16:46:27.456273
+QUERY: INSERT INTO users (username, password, phone_number, borrowed_books, permission, creation_date) VALUES (%s, %s, %s,%s,2, CURRENT_DATE)
+------------------------------------------------
+2024-08-05 16:49:11.522189
+QUERY: INSERT INTO users (username, password, phone_number, borrowed_books, permission, creation_date) VALUES (%s, %s, %s,%s,2, CURRENT_DATE)
+------------------------------------------------
+2024-08-05 16:50:16.742871
+QUERY: INSERT INTO users (username, password, phone_number, borrowed_books, permission, creation_date) VALUES (%s, %s, %s,%s,2, CURRENT_DATE)
+------------------------------------------------
+2024-08-05 16:51:17.037254
+QUERY: INSERT INTO users (username, password, phone_number, borrowed_books, permission, creation_date) VALUES (%s, %s, %s,%s,2, CURRENT_DATE)
+------------------------------------------------
+2024-08-05 16:51:46.684271
+QUERY: INSERT INTO users (username, password, phone_number, borrowed_books, permission, creation_date) VALUES (%s, %s, %s,%s,2, CURRENT_DATE)
+------------------------------------------------
